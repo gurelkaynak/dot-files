@@ -1,0 +1,9 @@
+let g:netrw_dirhistmax  =10
+let g:netrw_dirhist_cnt =7
+let g:netrw_dirhist_1='/devel/dahius/trunk/framework/library/system/model'
+let g:netrw_dirhist_2='/devel/dahius/trunk/framework/library/system'
+let g:netrw_dirhist_3='/devel/dahius/trunk/applications/hasanozgan.com/htdocs/nginx-default'
+let g:netrw_dirhist_4='/devel/dahius/trunk/framework/library/system/web'
+let g:netrw_dirhist_5='/devel/dahius/trunk/framework/library/Joy/File'
+let g:netrw_dirhist_6='/devel/netology/joy/trunk/library/Joy/Application'
+let g:netrw_dirhist_7='/devel/netology/joy/trunk/library/Joy/View'
