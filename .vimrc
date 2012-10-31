@@ -1,9 +1,9 @@
 syntax on
 set bg=light
-map <c-T> :tabnew<CR>
+"map <c-T> :tabnew<CR>
 
-map <TAB><TAB> :tabnext<CR>
-map <s-TAB><s-TAB> :tabprev<CR>
+"map <TAB><TAB> :tabnext<CR>
+"map <s-TAB><s-TAB> :tabprev<CR>
 
 set visualbell				" Silence the bell, use a flash instead
 set cinoptions=:.5s,>1s,p0,t0,(0,g2	
