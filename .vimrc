@@ -22,8 +22,8 @@ set showcmd			" Show (partial) command in status line.
 set autowrite		" Automatically save before commands like :next and :make
 set textwidth=120	" My terminal is 120 characters wide
 
-set number			" Line numbers
-set numberwidth=5	" Line numbers width
+"set number			" Line numbers
+"set numberwidth=3	" Line numbers width
 
 "set paste			" Copy-Paste from GUI
 set nopaste			"For supertab
