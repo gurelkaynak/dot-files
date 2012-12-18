@@ -5,7 +5,7 @@ set bg=light
 "map <TAB><TAB> :tabnext<CR>
 "map <s-TAB><s-TAB> :tabprev<CR>
 
-set visualbell				" Silence the bell, use a flash instead
+"set visualbell				" Silence the bell, use a flash instead
 set cinoptions=:.5s,>1s,p0,t0,(0,g2	
 					":.5s = indent case statements 1/2 shiftwidth
 					" >1s = indent 1 shiftwidth
@@ -28,7 +28,7 @@ set textwidth=120	" My terminal is 120 characters wide
 "set paste			" Copy-Paste from GUI
 set nopaste			"For supertab
 
-set tags=~/.vim/mytags/activtyfm
+"set tags=~/.vim/mytags/activtyfm
 
 "php folding
 
@@ -62,21 +62,21 @@ set mouse=r
 set ruler
 "set rulerformat=%55(%{strftime('%a\ %b\ %e\ %I:%M\ %p')}\ %5l,%-6(%c%V%)\ %P%)
 
-set laststatus=2
-set statusline =%<buf:[%n]\ %f\ %h%m%r " buffer, filename, flags
-set statusline+=\ \ [
-set statusline+=%{strlen(&ft)?&ft:'none'} " filetype
-set statusline+=,%{&encoding} " encoding
-set statusline+=,%{&fileformat} " file format
-set statusline+=]\ "
-set statusline+=%=
-set statusline+=asc:[%3.(%b%)\ %4.(0x%B%)] " current char
-set statusline+=%(tag:[%{Tlist_Get_Tagname_By_Line()}]%)
-set statusline+=\ col/lin:[%3.(%c%)\ %-7.(%l/%L%)]\ %P
+"set laststatus=2
+"set statusline =%<buf:[%n]\ %f\ %h%m%r " buffer, filename, flags
+"set statusline+=\ \ [
+"set statusline+=%{strlen(&ft)?&ft:'none'} " filetype
+"set statusline+=,%{&encoding} " encoding
+"set statusline+=,%{&fileformat} " file format
+"set statusline+=]\ "
+"set statusline+=%=
+"set statusline+=asc:[%3.(%b%)\ %4.(0x%B%)] " current char
+"set statusline+=%(tag:[%{Tlist_Get_Tagname_By_Line()}]%)
+"set statusline+=\ col/lin:[%3.(%c%)\ %-7.(%l/%L%)]\ %P
 "set statusline+=\ [%3.(%c%)\ %-7.(%l/%L%)]\ %P
-if filereadable(expand("~/.vim/plugin/vimbuddy.vim"))
-    set statusline+=\ %{VimBuddy()} " vim buddy
-endif
+"if filereadable(expand("~/.vim/plugin/vimbuddy.vim"))
+"    set statusline+=\ %{VimBuddy()} " vim buddy
+"endif
 
 " hilight matching parentesis
 set sm
@@ -107,21 +107,21 @@ autocmd FileType c set omnifunc=ccomplete#Complete
 autocmd FileType ruby set omnifunc=rubycomplete#CompleteRuby
 
 " NerdTree
-map <leader>d :NERDTreeToggle <CR> " Dir tree
-let NERDTreeCaseSensitiveSort = 1
-let NERDTreeChDirMode = 2
-let NERDTreeIgnore = ['\.[ao]$','\.swp$','\.DS_Store','\.svn','\.CVS','\.git']
-let NERDTreeMouseMode = 2
-let NERDTreeShowLineNumbers = 0
-let NERDTreeWinSize = 25
-noremap <F9> :NERDTree<CR>
-noremap <s-F9> :NERDTreeClose<CR>
+"map <leader>d :NERDTreeToggle <CR> " Dir tree
+"let NERDTreeCaseSensitiveSort = 1
+"let NERDTreeChDirMode = 2
+"let NERDTreeIgnore = ['\.[ao]$','\.swp$','\.DS_Store','\.svn','\.CVS','\.git']
+"let NERDTreeMouseMode = 2
+"let NERDTreeShowLineNumbers = 0
+"let NERDTreeWinSize = 25
+"noremap <F9> :NERDTree<CR>
+"noremap <s-F9> :NERDTreeClose<CR>
 
 "Mini Buf Explorer
-let g:miniBufExplMapWindowNavVim = 1
-let g:miniBufExplMapWindowNavArrows = 1
-let g:miniBufExplMapCTabSwitchBufs = 1
-let g:miniBufExplModSelTarget = 1 
+"let g:miniBufExplMapWindowNavVim = 1
+"let g:miniBufExplMapWindowNavArrows = 1
+"let g:miniBufExplMapCTabSwitchBufs = 1
+"let g:miniBufExplModSelTarget = 1 
 "let MiniBufExplorer
 
 " taglist
@@ -169,10 +169,10 @@ map <F4> :call PhpDocType()<CR>
 "map! <F8> switch() {<ESC>ocase:<CR>break;<CR>case:<CR>break;<CR>default:<CR>}<ESC>6kf(a
 
 
-:function! License_notice(file_name)
-: let path_file_name = g:VIM_CUSTOM . a:file_name
-:	:execute 'r ' . path_file_name
-:endfunction
+":function! License_notice(file_name)
+": let path_file_name = g:VIM_CUSTOM . a:file_name
+":	:execute 'r ' . path_file_name
+":endfunction
 
 " Cleanup
 ":function! Clean_up()
@@ -251,3 +251,10 @@ endif
 if has("autocmd")
   au BufReadPost * if line("'\"") > 1 && line("'\"") <= line("$") | exe "normal! g'\"" | endif
 endif
+
+
+set undodir=~/.vim/undodir
+set undofile
+set undolevels=1000 "maximum number of changes that can be undone
+set undoreload=10000 "maximum number lines to save for undo on a buffer reload
+
