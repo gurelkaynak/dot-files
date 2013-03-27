@@ -6,7 +6,7 @@ set bg=light
 "map <s-TAB><s-TAB> :tabprev<CR>
 
 "set visualbell				" Silence the bell, use a flash instead
-set cinoptions=:.5s,>1s,p0,t0,(0,g2	
+"set cinoptions=:.5s,>1s,p0,t0,(0,g2	
 					":.5s = indent case statements 1/2 shiftwidth
 					" >1s = indent 1 shiftwidth
 					" p0  = indent function definitions 0 spaces
@@ -14,13 +14,13 @@ set cinoptions=:.5s,>1s,p0,t0,(0,g2
 					" (0  = indent from unclosed parantheses
 					" g2  = indent C++ scope resolution 2 spaces
 
-set cinwords=if,else,while,do,for,switch,case	" Which keywords should indent 
-set formatoptions=tcqor	" t=text, c=comments, q=format with "gq", o,r=autoinsert comment leader
-set cindent		" indent on cinwords
+"set cinwords=if,else,while,do,for,switch,case	" Which keywords should indent 
+"set formatoptions=tcqor	" t=text, c=comments, q=format with "gq", o,r=autoinsert comment leader
+"set cindent		" indent on cinwords
 set background=light 	" set background to dark
 set showcmd			" Show (partial) command in status line.
 set autowrite		" Automatically save before commands like :next and :make
-set textwidth=120	" My terminal is 120 characters wide
+"set textwidth=120	" My terminal is 120 characters wide
 
 "set number			" Line numbers
 "set numberwidth=3	" Line numbers width
