@@ -19,7 +19,7 @@ set bg=light
 "set cindent		" indent on cinwords
 set background=light 	" set background to dark
 set showcmd			" Show (partial) command in status line.
-set autowrite		" Automatically save before commands like :next and :make
+"set autowrite		" Automatically save before commands like :next and :make
 "set textwidth=120	" My terminal is 120 characters wide
 
 "set number			" Line numbers
@@ -55,7 +55,7 @@ set incsearch
 set ignorecase
 set smartcase 
 
-set mouse=r
+"set mouse=r
 "set mousehide
 
 " display date-time in ruler
@@ -94,8 +94,8 @@ set sm
 "hi Cursor	term=NONE gui=NONE guibg=Green guifg=Black
 
 " folding
-set fen
-set fdm=marker
+"set fen
+"set fdm=marker
 
 autocmd FileType python set omnifunc=pythoncomplete#Complete
 autocmd FileType javascript set omnifunc=javascriptcomplete#CompleteJS
@@ -126,12 +126,12 @@ autocmd FileType ruby set omnifunc=rubycomplete#CompleteRuby
 
 " taglist
 " TagList configuration
-let Tlist_Ctags_Cmd = "/usr/local/bin/ctags"
-let Tlist_WinWidth = 25
-let Tlist_Compact_Format = 1
-let Tlist_Exit_OnlyWindow = 1
-nnoremap <silent><F8> :Tlist<CR>
-nnoremap <silent><F7> :w<CR>:TlistUpdate<CR>
+"let Tlist_Ctags_Cmd = "/usr/local/bin/ctags"
+"let Tlist_WinWidth = 25
+"let Tlist_Compact_Format = 1
+"let Tlist_Exit_OnlyWindow = 1
+"nnoremap <silent><F8> :Tlist<CR>
+"nnoremap <silent><F7> :w<CR>:TlistUpdate<CR>
 
 "let Tlist_Ctags_Cmd = '/usr/local/bin/ctags'
 "let Tlist_File_Fold_Auto_Close = 1
@@ -142,9 +142,9 @@ nnoremap <silent><F7> :w<CR>:TlistUpdate<CR>
 
 "PHPDocumantory
 "source ~/.vim/php-doc.vim
-map <F2> :call PhpDocClass()<CR>
-map <F3> :call PhpDocFunc()<CR>
-map <F4> :call PhpDocType()<CR>
+"map <F2> :call PhpDocClass()<CR>
+"map <F3> :call PhpDocFunc()<CR>
+"map <F4> :call PhpDocType()<CR>
 
 " run file with PHP CLI (CTRL-M)
 "autocmd FileType php noremap <C-T> :w!<CR>:!/usr/bin/phpcs %<CR>
@@ -203,47 +203,47 @@ map <F4> :call PhpDocType()<CR>
 ":endfunction
 
 " Some cscope specific settings
-if has("cscope")
+"if has("cscope")
     " Some scsope specific settings
-    set cscopequickfix=s-,c-,d-,i-,t-,e-
+"    set cscopequickfix=s-,c-,d-,i-,t-,e-
  
     " always use cscope instead of tags
-    set cst
+"    set cst
  
     " path to cscope
-    set csprg=/usr/bin/cscope
+"    set csprg=/usr/bin/cscope
  
     " search databased before searching tag files
-    set cscopetagorder=0
+"    set cscopetagorder=0
  
     " don\'t display cscope messages when adding database
-    set nocsverb
+"    set nocsverb
  
     " add any database in current directory
-    if filereadable(".cscope.out")
-        cs add .cscope.out
+"    if filereadable(".cscope.out")
+"        cs add .cscope.out
         " else search up a few directories
-    elseif filereadable("../.cscope.out")
-        cs add ../.cscope.out
-    elseif filereadable("../../.cscope.out")
-        cs add ../../.cscope.out
-    elseif filereadable("../../../.cscope.out")
-        cs add ../../../.cscope.out
-    elseif filereadable("../../../../.cscope.out")
-        cs add ../../../../.cscope.out
-    elseif filereadable("../../../../../.cscope.out")
-        cs add ../../../../../.cscope.out
+"    elseif filereadable("../.cscope.out")
+"        cs add ../.cscope.out
+"    elseif filereadable("../../.cscope.out")
+"        cs add ../../.cscope.out
+"    elseif filereadable("../../../.cscope.out")
+"        cs add ../../../.cscope.out
+"    elseif filereadable("../../../../.cscope.out")
+"        cs add ../../../../.cscope.out
+"    elseif filereadable("../../../../../.cscope.out")
+"        cs add ../../../../../.cscope.out
         " else add database pointed to by environment
-    elseif $CSCOPE_DB != ""
+ "   elseif $CSCOPE_DB != ""
  "       cs add \$CSCOPE_DB
-    endif
+"    endif
  
     " reset cscope verbosity
-    set csverb
+"    set csverb
  
     " easily reload cscope database
-    nmap <F11> :cs reset<cr>
-endif
+"    nmap <F11> :cs reset<cr>
+"endif
 
 
 " Uncomment the following to have Vim jump to the last position when
