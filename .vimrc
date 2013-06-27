@@ -1,5 +1,6 @@
 syntax on
 set bg=light
+set runtimepath^=~/.vim/bundle/ctrlp.vim
 "map <c-T> :tabnew<CR>
 
 "map <TAB><TAB> :tabnext<CR>
