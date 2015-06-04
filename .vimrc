@@ -1,5 +1,5 @@
 syntax on
-set bg=light
+set bg=dark
 set runtimepath^=~/.vim/bundle/ctrlp.vim
 "map <c-T> :tabnew<CR>
 
@@ -18,7 +18,6 @@ set runtimepath^=~/.vim/bundle/ctrlp.vim
 "set cinwords=if,else,while,do,for,switch,case	" Which keywords should indent 
 "set formatoptions=tcqor	" t=text, c=comments, q=format with "gq", o,r=autoinsert comment leader
 "set cindent		" indent on cinwords
-set background=light 	" set background to dark
 set showcmd			" Show (partial) command in status line.
 "set autowrite		" Automatically save before commands like :next and :make
 "set textwidth=120	" My terminal is 120 characters wide
