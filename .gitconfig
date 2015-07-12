@@ -1,9 +1,6 @@
 [user]
 	name = Gürel Kaynak
 	email = gurelkaynak@gmail.com
-[github]
-	user = gurelkaynak
-	token = 8e1056b9397b5d221045461447813ea3
 [alias]
 	st = status
 	ci = commit
